@@ -1,0 +1,448 @@
+<div class="wrapper">
+  <div class="header-container">
+    <app-header></app-header>
+    <div class="carousal-cont">
+      <ngb-carousel
+        [showNavigationArrows]="true"
+        [showNavigationIndicators]="true"
+        interval="5000"
+        [keyboard]="true"
+        [pauseOnHover]="true"
+        [wrap]="true"
+        [activeId]="'secondSlide'"
+      >
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper img-block-1 "></div>
+          <div class="carousel-caption">
+            <h2 class="font-strong">Anyone who has never made a mistake has never tried anything new</h2>
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. psum
+              dolor sit amet, consectetur adipiscing elitpsum dolor sit amet,
+              consectetur adipiscing elit
+            </h4>
+            <a class="btn  donate-btn btn-primary"  (click)="redirect('donate')"  >
+              <span class="badge"><i class="fa fa-heart"></i></span> Donate Now
+            </a>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper img-block-2"></div>
+          <div class="carousel-caption">
+            <h2 class="font-strong">He who opens a school door, closes a prison.</h2>
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. psum
+              dolor sit amet, consectetur adipiscing elitpsum dolor sit amet,
+              consectetur adipiscing elit
+            </h4>
+            <a class="btn  donate-btn btn-primary"  (click)="redirect('donate')"  >
+              <span class="badge"><i class="fa fa-heart"></i></span> Donate Now
+            </a>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper img-block-3"></div>
+          <div class="carousel-caption">
+            <h2 class="font-strong">Either you run the day or the day runs you</h2>
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. psum
+              dolor sit amet, consectetur adipiscing elitpsum dolor sit amet,
+              consectetur adipiscing elit
+            </h4>
+            <a class="btn  donate-btn btn-primary"  (click)="redirect('donate')"  >
+              <span class="badge"><i class="fa fa-heart"></i></span> Donate Now
+            </a>
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+  </div>
+
+  <section class="waypoint-tigger xs-section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-6">
+          <div class="xs-archive-content">
+            <div class="xs-heading">
+              <h2 class="xs-line-title">Our Missions</h2>
+              <h3 class="xs-title big" data-title="Archived">Archived</h3>
+            </div>
+            <p>
+              We register and regulate charities in England and Wales, to ensure
+              that the public can support charities with confidence. As
+              registrar, we are responsible for maintaining an accurate.
+            </p>
+            <h5>Our strategic priorities up to 2018 are:</h5>
+            <ul class="xs-unorder-list arrow">
+              <li>Protecting charities from abuse or mismanagement</li>
+              <li>Enabling trustees to run their charities effectively</li>
+              <li>Encouraging greater transparency and accountability</li>
+            </ul>
+            <!-- <ul class="xs-funfact-list">
+              <li>
+                <p>
+                  <span
+                    class="number-percentage-count number-percentage"
+                    data-value="19"
+                    data-animation-duration="3500"
+                  >
+                    <ng2-odometer
+                      [number]="counterNumbers[0]"
+                      [config]="{}"
+                    ></ng2-odometer></span
+                  ><sup> + </sup>
+                </p>
+                <span>Hospitals</span>
+              </li>
+              <li>
+                <p>
+                  <span
+                    class="number-percentage-count number-percentage"
+                    data-value="19"
+                    data-animation-duration="3500"
+                  >
+                    <ng2-odometer
+                      [number]="counterNumbers[1]"
+                      [config]="{}"
+                    ></ng2-odometer></span
+                  ><sup> + </sup>
+                </p>
+                <span>Hospitals</span>
+              </li>
+              <li>
+                <p>
+                  <span
+                    class="number-percentage-count number-percentage"
+                    data-value="90"
+                    data-animation-duration="3500"
+                  >
+                    <ng2-odometer
+                      [number]="counterNumbers[2]"
+                      [config]="{}"
+                    ></ng2-odometer></span
+                  ><sup> + </sup>
+                </p>
+                <span>Volunteers</span>
+              </li>
+              <li>
+                <p>
+                  <span
+                    class="number-percentage-count number-percentage"
+                    data-value="27"
+                    data-animation-duration="3500"
+                  >
+                    <ng2-odometer
+                      [number]="counterNumbers[3]"
+                      [config]="{}"
+                    ></ng2-odometer></span
+                  ><sup> + </sup>
+                </p>
+                <span>Winning Awards</span>
+              </li>
+              <div class="clearfix"></div>
+            </ul> -->
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6 row xs-archive-image pr-0">
+          <div class="col-md-12 xs-mb-30">
+            <img src="assets/img/images/blog_1.jpg" alt="" class="rounded" />
+          </div>
+          <div class="col-md-6 col-sm-6 col-6 mt-3">
+            <img src="assets/img/images/baby_3.jpg" alt="" class="rounded" />
+          </div>
+          <div class="col-md-6 col-sm-6 col-6 mt-3">
+            <img src="assets/img/images/baby_7.jpg" alt="" class="rounded" />
+          </div>
+        </div>
+      </div>
+      <!-- .row end -->
+    </div>
+    <!-- .container end -->
+  </section>
+
+  <section class="bg-gray waypoint-tigger   xs-section-containers">
+    <div class="container">
+      <div class="xs-heading row xs-mb-60">
+        <div class="col-md-9 col-xl-9">
+          <h2 class="xs-title">Popular Causes</h2>
+          <span class="">------</span>
+          <p>
+            FundPress has built a platform focused on aiding entrepreneurs,
+            startups, and <br />
+            companies raise capital from anyone.
+          </p>
+        </div>
+        <!-- .xs-heading-title END -->
+      </div>
+      <!-- .row end -->
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="xs-popular-item xs-box-shadow">
+            <div class="xs-item-header">
+              <img src="assets/img/images/causes_4.jpg" alt="" />
+
+              <div class="xs-skill-bar">
+                <div class="xs-skill-track" style="width: 90%;">
+                  <p>
+                    <span
+                      class="number-percentage-count number-percentage"
+                      data-value="90"
+                      data-animation-duration="3500"
+                      >90</span
+                    >%
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- .xs-item-header END -->
+            <div class="xs-item-content">
+              <ul class="xs-simple-tag xs-mb-20">
+                <li><a href="">Food</a></li>
+              </ul>
+
+              <a  class="xs-post-title xs-mb-30"
+                >Splash Drone 3 a Fully Waterproof Drone that floats</a
+              >
+
+              <ul class="xs-list-with-content">
+                <li>
+                  $67,000
+                  <div>Pledged</div>
+                </li>
+                <li>
+                  <span
+                    class="number-percentage-count number-percentage"
+                    data-value="90"
+                    data-animation-duration="3500"
+                    >90</span
+                  >%
+                  <div>Funded</div>
+                </li>
+                <li>
+                  3
+                  <div>Days to go</div>
+                </li>
+              </ul>
+
+              <div class="xs-separetor"></div>
+
+              <div class="row xs-margin-0">
+                <div class="xs-round-avatar">
+                  <img src="assets/img/images/avatar_1.jpg" alt="" />
+                </div>
+                <div class="xs-avatar-title">
+                  <a ><span>By</span>Ema Watson</a>
+                </div>
+              </div>
+            </div>
+            <!-- .xs-item-content END -->
+          </div>
+          <!-- .xs-popular-item END -->
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="xs-popular-item xs-box-shadow">
+            <div class="xs-item-header">
+              <img src="assets/img/images/causes_5.jpg" alt="" />
+
+              <div class="xs-skill-bar">
+                <div class="xs-skill-track" style="width: 59%;">
+                  <p>
+                    <span
+                      class="number-percentage-count number-percentage"
+                      data-value="59"
+                      data-animation-duration="3500"
+                      >59</span
+                    >%
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- .xs-item-header END -->
+            <div class="xs-item-content">
+              <ul class="xs-simple-tag xs-mb-20">
+                <li><a href="">Health</a></li>
+              </ul>
+
+              <a  class="xs-post-title xs-mb-30"
+                >The Read Read: Braille Literacy Tool for the Blind</a
+              >
+
+              <ul class="xs-list-with-content">
+                <li>
+                  $33,600
+                  <div>Pledged</div>
+                </li>
+                <li>
+                  <span
+                    class="number-percentage-count number-percentage"
+                    data-value="59"
+                    data-animation-duration="3500"
+                    >59</span
+                  >%
+                  <div>Funded</div>
+                </li>
+                <li>
+                  10
+                  <div>Days to go</div>
+                </li>
+              </ul>
+
+              <div class="xs-separetor"></div>
+
+              <div class="row xs-margin-0">
+                <div class="xs-round-avatar">
+                  <img src="assets/img/images/avatar_2.jpg" alt="" />
+                </div>
+                <div class="xs-avatar-title">
+                  <a ><span>By</span>Kene Williamson</a>
+                </div>
+              </div>
+            </div>
+            <!-- .xs-item-content END -->
+          </div>
+          <!-- .xs-popular-item END -->
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="xs-popular-item xs-box-shadow">
+            <div class="xs-item-header">
+              <img src="assets/img/images/causes_6.jpg" alt="" />
+
+              <div class="xs-skill-bar">
+                <div class="xs-skill-track" style="width: 35%;">
+                  <p>
+                    <span
+                      class="number-percentage-count number-percentage"
+                      data-value="35"
+                      data-animation-duration="3500"
+                      >35</span
+                    >%
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- .xs-item-header END -->
+            <div class="xs-item-content">
+              <ul class="xs-simple-tag xs-mb-20">
+                <li><a href="">Education</a></li>
+              </ul>
+
+              <a  class="xs-post-title xs-mb-30"
+                >BuildOne: $99 3D Printer w/ WiFi and Auto Bed Leveling!</a
+              >
+
+              <ul class="xs-list-with-content">
+                <li>
+                  $12,760
+                  <div>Pledged</div>
+                </li>
+                <li>
+                  <span
+                    class="number-percentage-count number-percentage"
+                    data-value="35"
+                    data-animation-duration="3500"
+                    >35</span
+                  >%
+                  <div>Funded</div>
+                </li>
+                <li>
+                  66
+                  <div>Days to go</div>
+                </li>
+              </ul>
+
+              <div class="xs-separetor"></div>
+
+              <div class="row xs-margin-0">
+                <div class="xs-round-avatar">
+                  <img src="assets/img/images/avatar_3.jpg" alt="" />
+                </div>
+                <div class="xs-avatar-title">
+                  <a ><span>By</span>Leo Baddabes</a>
+                </div>
+              </div>
+            </div>
+            <!-- .xs-item-content END -->
+          </div>
+          <!-- .xs-popular-item END -->
+        </div>
+      </div>
+      <!-- .row end -->
+    </div>
+    <!-- .container end -->
+  </section>
+
+  <div class="desc-container">
+    <section class="container-content py-3">
+      <div class="row container-border">
+        <div class="background-1 col-lg-6 col-md-12 p-0"></div>
+        <div class="col-lg-6 col-md-12 p-4">
+          <h5 class="desc">
+            Lorem Ipsum is simply dummy text of the tting industry. Lorem Ipsum
+            has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer. Join the fight against hunger and
+            malnutrition.
+          </h5>
+          <div class="progress-title pt-md-4">
+            <span>1,553 supporters needed</span><span class="fl-r">70%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" style="width:70%"></div>
+          </div>
+          <button class="pay-now" (click)="redirect('donate')">Give Now</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="payment-confirmation py-3">
+      <div class="row">
+        <div class="col-md-4 col-4 col-lg-4"></div>
+      </div>
+    </section>
+  </div>
+
+  <section class="xs-section-padding xs-section-donate bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-6">
+          <div class="xs-text-content xs-pr-20">
+            <h2 class="color-navy-blue">
+              Welcome to CharityPress please rise your hand
+            </h2>
+            <p>
+              The CharityPress community was named a “Top 25 Best Global
+              Philanthropist” by Barron’s. We beat Oprah. And, Mashable named
+              CharityPress something like “the best place to raise money online
+              for your favorite causes.”
+            </p>
+            <blockquote>
+              If you don't understand how fast and easy it is to so long for
+              your favorite charity on FundPress, please try it.
+              <span>How it works</span> page, <span>Contact us</span>.
+            </blockquote>
+            <a  class="btn  donate-btn btn-primary" (click)="redirect('donate')">
+              <span class="badge"><i class="fa fa-heart"></i></span> Donate Now
+            </a>
+          </div>
+          <!-- .xs-text-content END -->
+        </div>
+        <div class="col-md-6 col-lg-3 hide-sc">
+          <div class="xs-feature-image">
+            <img src="assets/img/images/features_1.jpg" alt="" />
+          </div>
+          <!-- .xs-feature-image END -->
+        </div>
+        <div class="col-md-6 col-lg-3 hide-sc">
+          <div class="xs-feature-image">
+            <img src="assets/img/images/features_2.jpg" alt="" />
+          </div>
+          <!-- .xs-feature-image END -->
+        </div>
+      </div>
+      <!-- .row end -->
+    </div>
+    <!-- .container end -->
+  </section>
+
+  <app-footer></app-footer>
+</div>

@@ -1,0 +1,114 @@
+.donate-content {
+  .abt-img {
+    background: url("../assets/img/images/img4.jpg");
+    background-size: cover;
+    height: 226px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 119px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .help-section {
+    margin: 2rem auto;
+    text-align: center;
+  }
+  .xs-separetor {
+    display: block;
+    position: relative;
+    width: 5px;
+    height: 5px;
+    background: #0d0d0d;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  .xs-separetor::before,
+  .xs-separetor::after {
+    content: "";
+    vertical-align: top;
+    border-bottom: 1px solid #0d0d0d;
+    position: absolute;
+    top: 0;
+    right: 9pt;
+    height: 2px;
+    width: 28px;
+  }
+  .xs-separetor::after {
+    left: 9pt;
+    right: inherit;
+  }
+  .card-donate {
+    text-align: center;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+  .card-body h6 {
+    color: #3fc99b;
+  }
+  .make-donate {
+    background-color: #f9f9f9;
+    padding: 5rem 0px;
+  }
+  .wrap-content-img {
+    float: left;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  .wrap-content-form {
+    float: right;
+  }
+  .img-family {
+    width: 100%;
+  }
+  .color-green {
+    color: #3ac798;
+  }
+  .small {
+    font-size: 100%;
+    font-weight: 400;
+  }
+  .seperator-xs {
+    height: 1px;
+    width: 20%;
+    background-color: #2cc391;
+    margin-left: 0;
+  }
+  .xs-donation-form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .xs-donation-form .xs-input-group {
+    margin-bottom: 30px;
+  }
+  .xs-donation-form input:not([type="submit"]),
+  .xs-donation-form select {
+    border: 2px solid #c8c8c8;
+    height: 50px !important;
+    border-radius: 0;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding: 0 29px;
+    width: calc(100% - 55px);
+  }
+  .xs-donation-form select option {
+    color: #777777;
+    font-size: 1em;
+  }
+  .btn-warning {
+    background-color: #fa575d;
+    padding: 16px 39px;
+    border-radius: 50px;
+    color: #ffffff;
+  }
+  .xs-donation-form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(../assets/img/images/arrow-green.png);
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 27px center;
+  }
+}

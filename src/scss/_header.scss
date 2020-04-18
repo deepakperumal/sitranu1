@@ -1,0 +1,37 @@
+header {
+  .active a {
+    color: #7687ff !important;
+    font-weight: 500;
+  }
+  .fixed-top {
+    z-index: 9999999;
+    background: #fff;
+    opacity: 0.8;
+  }
+  .page-navbar {
+    border-bottom: 1px solid #ededed;
+    .logo,.logo1 {
+      width: 280px;
+      position: relative;
+      top: 4px;
+      cursor: pointer;
+    }
+    .nav-link {
+      color: "#000000";
+      cursor: pointer;
+      font-weight: 600 !important;
+    }
+    .nav-link:hover:after {
+      transform: scaleX(1);
+    }
+    .nav-link:after {
+      display: block;
+      content: "";
+      border-bottom: solid 3px #019fb6;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+      position: relative;
+      top: 16px;
+    }
+  }
+}

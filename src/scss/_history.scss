@@ -1,0 +1,37 @@
+.history-content {
+  .abt-img {
+    background: url("../assets/img/images/img4.jpg");
+    background-size: cover;
+    height: 226px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 119px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .card {
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+  }
+  .card:hover {
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  .card-text {
+    color: #18bfc3;
+  }
+  .card-footer {
+    background-color: transparent;
+    margin-top: 3rem;
+  }
+  .card-comments {
+    color: #fa575d;
+    float: left;
+  }
+  .card-views {
+    color: #9064bf;
+    float: right;
+  }
+}

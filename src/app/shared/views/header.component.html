@@ -1,0 +1,35 @@
+<header>
+    <div class="row">
+       <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg page-navbar fixed-top ml-auto py-3 px-3">
+             <img src="assets/img/brand/logo.png" class="logo"  (click)="redirect('')"> 
+             <img src="assets/img/brand/logo.png" class="logo1" > 
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+             <i class="cui-justify-left icons font-2xl d-block mt-4"></i>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                   <li class="nav-item pr-md-3 active">
+                      <a class="nav-link" (click)="redirect('')">Home</a>
+                   </li>
+                   <li class="nav-item pr-md-3">
+                      <a class="nav-link" (click)="redirect('about')" >What We Are</a>
+                   </li>
+                   <li class="nav-item pr-md-3">
+                      <a class="nav-link"(click)="redirect('history')">What We Do</a>
+                   </li>
+                   <li class="nav-item pr-md-3">
+                      <a class="nav-link"(click)="redirect('donate')">Donate</a>
+                   </li>
+                   <li class="nav-item pr-md-3">
+                     <a class="nav-link"(click)="redirect('children')">Children</a>
+                  </li>
+                   <li class="nav-item pr-md-3">
+                      <a class="nav-link"(click)="redirect('event')">Events</a>
+                   </li>
+                </ul>
+             </div>
+          </nav>
+       </div>
+    </div>
+ </header>
