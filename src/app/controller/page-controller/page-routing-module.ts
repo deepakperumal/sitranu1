@@ -9,6 +9,7 @@ import { ContactComponent } from './donate.component'
 import { ChildrenComponent } from './children.component'
 import {EventDetailComponent} from './sub-controller/event-detail.component'
 import {BlogComponent} from './sub-controller/blog.component'
+import { ContactUsComponent } from './contact.component'
 
 
 export const routes: Routes = [
@@ -20,7 +21,8 @@ export const routes: Routes = [
         {path:'event',component: EventComponent},
         {path:'children',component: ChildrenComponent},
         {path:'blog',component: BlogComponent},
-        {path:'event-detail',component: EventDetailComponent}
+        {path:'event-detail',component: EventDetailComponent},
+        {path:'contact',component: ContactUsComponent}
         
 ];
 

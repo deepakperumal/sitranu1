@@ -15,6 +15,7 @@ export class HeaderComponent {
         $('#navbarTogglerDemo01').toggle()
       })
    });
+   
  }
 
   redirect(pagename: string) {

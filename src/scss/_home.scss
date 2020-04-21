@@ -392,9 +392,14 @@
 
 /* Media */
 @media only screen and (max-width: 767px) {
+  .card-img-top
+  {
+    width: 100%;
+    height: auto !important;
+  }
   .blog-content img {
-    width: 121%;
-    height: auto;
+    width: 327px;
+    height: 193px;
     border: 1px solid black;
     position: relative;
     left: -39px;
