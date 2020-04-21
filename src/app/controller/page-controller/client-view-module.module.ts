@@ -6,6 +6,9 @@ import { EventComponent } from './event.component'
 import { HistoryComponent } from './history.component'
 import {  ChildrenComponent} from './children.component'
 import { ContactComponent } from './donate.component'
+import {AboutDetailComponent} from './sub-controller/about-detail.component'
+import {EventDetailComponent} from './sub-controller/event-detail.component'
+import {BlogComponent} from './sub-controller/blog.component'
 import { SharedModuleModule } from '../../shared/module/shared-module.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
@@ -15,7 +18,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     EventComponent,
     HistoryComponent,
     ContactComponent,
-    ChildrenComponent
+    ChildrenComponent,
+    AboutDetailComponent,
+    EventDetailComponent,
+    BlogComponent
+
   ],
   imports: [
     CommonModule,

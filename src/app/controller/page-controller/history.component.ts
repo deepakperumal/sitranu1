@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 // declare var $: any;
 
 @Component({
@@ -6,8 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HistoryComponent {
 
-  constructor() { }
+  constructor(private router :Router) { }
   ngOnInit() {
+  }
+  redirect(pagename: string) {
+    this.router.navigate(['/'+pagename]);
   }
 
 }

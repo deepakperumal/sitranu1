@@ -392,8 +392,24 @@
 
 /* Media */
 @media only screen and (max-width: 767px) {
+  .blog-content img {
+    width: 121%;
+    height: auto;
+    border: 1px solid black;
+    position: relative;
+    left: -39px;
+    margin-bottom: 18px;
+}
 
-
+  .modal-container-wrap #modal-container .modal-background .modal
+  {
+    overflow-y: scroll;
+    height: 100vh;
+  }
+  .modal-container-wrap .model-image
+  {
+    float: unset !important;
+  }
 .logo
 {
   display: none !important;
@@ -408,7 +424,7 @@
   }
   .abt-img
   {
-    font-size: 60px !important;
+    font-size: 45px !important;
   }
   .navbar-toggler
   {
