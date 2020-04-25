@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router }  from '@angular/router';
+import { Xtb } from '@angular/compiler';
 declare var $: any;
 
 @Component({
@@ -18,8 +19,9 @@ export class HeaderComponent {
    
  }
 
-  redirect(pagename: string) {
+  redirect(pagename) {
     this.router.navigate(['/'+pagename]);
   }
+
 }
  

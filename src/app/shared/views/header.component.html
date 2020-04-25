@@ -9,26 +9,26 @@
              </button>
              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                   <li class="nav-item pr-md-3 active">
-                      <a class="nav-link" (click)="redirect('')">Home</a>
+                   <li class="nav-item pr-md-3 active" data-id='home'>
+                      <a class="nav-link" (click)="redirect('')" >Home</a>
                    </li>
-                   <li class="nav-item pr-md-3">
+                   <li class="nav-item pr-md-3" data-id='about' >
                       <a class="nav-link" (click)="redirect('about')" >What We Are</a>
                    </li>
-                   <li class="nav-item pr-md-3">
-                      <a class="nav-link"(click)="redirect('history')">What We Do</a>
+                   <li class="nav-item pr-md-3" data-id='history'>
+                      <a class="nav-link"(click)="redirect('history')"  >What We Do</a>
                    </li>
-                   <li class="nav-item pr-md-3">
-                      <a class="nav-link"(click)="redirect('donate')">Donate</a>
+                   <li class="nav-item pr-md-3"  data-id='donate'>
+                      <a class="nav-link"(click)="redirect('donate')" >Donate</a>
                    </li>
-                   <li class="nav-item pr-md-3">
-                     <a class="nav-link"(click)="redirect('children')">Our Students</a>
+                   <li class="nav-item pr-md-3" data-id='children'>
+                     <a class="nav-link"(click)="redirect('children')"  >Our Students</a>
                   </li>
-                   <li class="nav-item pr-md-3">
-                      <a class="nav-link"(click)="redirect('event')">Events</a>
+                   <li class="nav-item pr-md-3"  data-id='event'>
+                      <a class="nav-link"(click)="redirect('event')" >Events</a>
                    </li>
-                   <li class="nav-item pr-md-3">
-                     <a class="nav-link"(click)="redirect('contact')">Contact</a>
+                   <li class="nav-item pr-md-3" data-id='contact'>
+                     <a class="nav-link"(click)="redirect('contact')"  >Contact</a>
                   </li>
                 </ul>
              </div>

@@ -33,6 +33,7 @@
     "ngx-bootstrap": "^5.6.1",
     "path": "^0.12.7",
     "rxjs": "~6.5.4",
+    "swipe-carousel": "^1.2.3",
     "tslib": "^1.10.0",
     "typescript": "~3.7.5",
     "zone.js": "~0.10.2"

@@ -14,33 +14,23 @@
               <div class="row">
                   <div class="col-md-6">
                       <div class="wrap-content-img">
-                          <img src="assets/img/images/family.jpg" class="img-family" alt='...'>
+                          <img src="assets/img/images/grouppic.jpeg" class="img-family" alt='...'>
                       </div>
                   </div>
                   <div class="col-md-6">
                       <div class="wrap-content-form">
                           <h1 class="xs-title">Make a donation</h1>
-                          <p class="small">To learn more about make donate charity with us visit our "<span class="color-green">Contact us</span>" site. By calling <span class="color-green">+44(0) 800 883 8450</span>.</p>
+                          
                           <hr class="seperator-xs" />
-                          <form action="#" method="POST" id="xs-donation-form" class="xs-donation-form">
+                          <div id="xs-donation-form" class="xs-donation-form">
                               <div class="xs-input-group">
                                   <label for="xs-donate-name">Donation Amount <span class="color-light-red">**</span></label>
-                                  <input type="text" name="name" id="xs-donate-name" class="form-control" placeholder="Minimum of $5">
+                                  <input type="text" [(ngModel)]="amnt"   name="name" id="xs-donate-name" class="form-control" placeholder="Minimum of INR 5">
                               </div><!-- .xs-input-group END -->
-                              
-                              <div class="xs-input-group">
-                                  <label for="xs-donate-charity">List of Evaluated Charities <span class="color-light-red">**</span></label>
-                                  <select name="charity-name" id="xs-donate-charity" class="form-control">
-                                      <option value="">Select</option>
-                                      <option value="amarokSocity">Amarok socity</option>
-                                      <option value="amarokSocity">Amarok socity</option>
-                                      <option value="amarokSocity">Amarok socity</option>
-                                      <option value="amarokSocity">Amarok socity</option>
-                                  </select>
-                              </div><!-- .xs-input-group END -->
-          
-                              <button type="submit" class="btn btn-warning"><span class="badge"><i class="fa fa-heart"></i></span> Donate now</button>
-                          </form>
+
+                              <button type="submit" (click)="proceed()" class="btn btn-warning"><span class="badge"><i class="fa fa-heart"></i></span> Donate now</button>
+                            </div>
+                            
                       </div>
                   </div>
               </div>

@@ -13,6 +13,7 @@ import {EventDetailComponent} from './sub-controller/event-detail.component'
 import {BlogComponent} from './sub-controller/blog.component'
 import { SharedModuleModule } from '../../shared/module/shared-module.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -30,7 +31,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     CommonModule,
     SharedModuleModule,
-    NgbModule
+    NgbModule,
+    FormsModule
     
   ]
 })
