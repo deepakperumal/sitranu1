@@ -131,6 +131,7 @@
       border-radius: 8px;
       z-index: 1;
       min-width: 350px;
+      width: 32px;
     }
 
     .about-detail
@@ -168,7 +169,7 @@
     }
 
     .services .icon-box:hover::before {
-      background: #3489fa;
+      background: #64afff;
       right: 0;
       top: 0;
       width: 100%;

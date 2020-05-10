@@ -12,7 +12,7 @@ export class HeaderComponent {
   constructor(private router : Router) { }
   ngOnInit() {
     $(document).ready(function() {
-     $('.logo1').click(function(e){
+     $('.sidebar').click(function(e){
         $('#navbarTogglerDemo01').toggle()
       })
    });

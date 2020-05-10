@@ -2,52 +2,47 @@
   <div class="header-container">
     <app-header></app-header>
     <div class="carousal-cont">
-      <ngb-carousel
-        [showNavigationArrows]="true"
-        [showNavigationIndicators]="true"
-        interval="5000"
-        [keyboard]="true"
-        [pauseOnHover]="true"
-        [wrap]="true"
-        [activeId]="'secondSlide'"
-      >
-        <ng-template ngbSlide>
-          <div class="picsum-img-wrapper img-block-1 "></div>
-          <div class="carousel-caption">
-            <h2 class="font-strong">Anyone who has never made a mistake has never tried anything new</h2>
-            <h5 class="fw">
-              There are a lot of students in India, for whom access to quality education is an unimaginable privilege. Sitranu Foundation, together with you, provides the poor students with quality education. Help us to help the poor students.
-            </h5>
-            <a class="btn  donate-btn btn-primary"  (click)="redirect('donate')"  >
-              <span class="badge"><i class="fa fa-heart"></i></span> Donate Now
-            </a>
+    
+        <section id="slideshow">
+              <div class="slider">
+              <div class="slide slide1 current">
+                  <div class="content">
+                      <h2>Anyone who has never made a mistake has never tried anything new</h2>
+                      <p>There are a lot of students in India, for whom access to quality education is an unimaginable privilege. Sitranu Foundation, together with you, provides the poor students with quality education. Help us to help the poor students.</p>
+                     
+                    </div>
+              </div>
+          
+              <div class="slide">
+                  <div class="content">
+                      <h2>He who opens a school door, closes a prison.</h2>
+                      <p>We at Sitranu Foundation, provide high quality education for poor students with high potential. We offer them the wings to fly high</p>
+                     
+                    </div>
+              </div>
+          
+              <div class="slide">
+                  <div class="content">
+                      <h2>Either you run the day or the day runs you</h2>
+                      <p>You make a living by what you get,You make a life by what you give</p>
+                     
+                    </div>
+              </div>
+                
+
           </div>
-        </ng-template>
-        <ng-template ngbSlide>
-          <div class="picsum-img-wrapper img-block-2"></div>
-          <div class="carousel-caption">
-            <h2 class="font-strong">He who opens a school door, closes a prison.</h2>
-            <h5 class="fw">
-              We at Sitranu Foundation, provide high quality education for poor students with high potential. We offer them the wings to fly high. 
-            </h5>
-            <a class="btn  donate-btn btn-primary"  (click)="redirect('donate')"  >
-              <span class="badge"><i class="fa fa-heart"></i></span> Donate Now
-            </a>
+          
+          <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+            <label class="onoffswitch-label" for="myonoffswitch">Auto</label>
           </div>
-        </ng-template>
-        <ng-template ngbSlide>
-          <div class="picsum-img-wrapper img-block-3"></div>
-          <div class="carousel-caption">
-            <h2 class="font-strong">Either you run the day or the day runs you</h2>
-            <h5 class="fw">
-              You make a living by what you get,You make a life by what you give
-            </h5>
-            <a class="btn  donate-btn btn-primary"  (click)="redirect('donate')"  >
-              <span class="badge"><i class="fa fa-heart"></i></span> Donate Now
-            </a>
+          
+          <div class="buttons">
+              <button id="prev"><i class="fa fa-arrow-left"></i></button>
+              <button id="next"><i class="fa fa-arrow-right"></i></button>
           </div>
-        </ng-template>
-      </ngb-carousel>
+        </section>	
+
     </div>
   </div>
 
@@ -210,7 +205,7 @@
                   <div>Days to go</div>
                 </li>
               </ul>
-
+              <a class="btn donate-btn btn-primary" (click)="redirect('donate')"><span class="badge"><i class="fa fa-heart"></i></span> Donate Now </a>
             </div>
             <!-- .xs-item-content END -->
           </div>
@@ -264,6 +259,7 @@
                   <div>Days to go</div>
                 </li>
               </ul>
+              <a class="btn donate-btn btn-primary" (click)="redirect('donate')"><span class="badge"><i class="fa fa-heart"></i></span> Donate Now </a>
             </div>
             <!-- .xs-item-content END -->
           </div>
@@ -317,6 +313,7 @@
                   <div>Days to go</div>
                 </li>
               </ul>
+              <a class="btn donate-btn btn-primary" (click)="redirect('donate')"><span class="badge"><i class="fa fa-heart"></i></span> Donate Now </a>
             </div>
             <!-- .xs-item-content END -->
           </div>
