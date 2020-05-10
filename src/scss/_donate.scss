@@ -83,7 +83,7 @@
     font-size: 1em;
   }
   .btn-warning {
-    background-color: #fa575d;
+    background-color: #4b98fa;
     padding: 16px 39px;
     border-radius: 50px;
     color: #ffffff;
@@ -103,9 +103,9 @@
     position: fixed;
     display: table;
     height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
+    width: 70%;
+    top: -27px;
+    left: 200px;
     transform: scale(0);
     z-index: 1;
     overflow-x: scroll !important;
@@ -292,7 +292,6 @@
   }
   #modal-container .modal-background {
     display: table-cell;
-    background: #4b98fa;
     text-align: center;
     vertical-align: middle;
   }

@@ -25,6 +25,7 @@ export class HistoryComponent {
     })
   }
   redirect(pagename: string) {
+    localStorage.setItem("url",'history');
     this.router.navigate(['/'+pagename]);
   }
 

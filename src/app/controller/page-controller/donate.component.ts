@@ -15,6 +15,7 @@ export class ContactComponent {
   response;
   razorpayResponse;
   showModal = false;
+  showCustom = false;
  
   ngOnInit() {
     this.razorpayService
@@ -64,12 +65,21 @@ export class ContactComponent {
     razorpay.open();
   }
 
+  public add(amount)
+  {
+    this.amnt = amount;
+    this.proceed()
+  }
   public razorPaySuccessHandler(response) {
     console.log(response);
     this.razorpayResponse = `Razorpay Response`;
     this.showModal = true;
     this.cd.detectChanges()
     document.getElementById('razorpay-response').style.display = 'block';
+  }
+  public showCustomOption()
+  {
+    this.showCustom=true;
   }
 
   public test() {

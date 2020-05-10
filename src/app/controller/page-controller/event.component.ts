@@ -10,6 +10,15 @@ export class EventComponent {
   constructor(private router:Router) { }
   ngOnInit() { 
     $(window).scrollTop(0);
+    $(window).scroll(function() {
+      $(".load-more-content").each( function() {
+          if( $(window).scrollTop() > $(this).offset().top - 300 ) {
+              $(this).css('opacity',1);
+          } else {
+              $(this).css('opacity',0);
+          }
+      }); 
+  });
     var url = $(location).attr('href')
     var parts = url.split("/");
     var last_part = parts[parts.length-2];
@@ -23,6 +32,7 @@ export class EventComponent {
     })
   }
   redirect(pagename: string) {
+    localStorage.setItem("url",'event');
     this.router.navigate(['/'+pagename]);
   }
 

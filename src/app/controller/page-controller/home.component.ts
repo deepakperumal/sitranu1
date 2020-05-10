@@ -29,13 +29,14 @@ const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
 const toggle = document.querySelector('#myonoffswitch');
 let auto = true; // Auto scroll
-const intervalTime = 7000;
+const intervalTime = 10000;
 let slideInterval;
 
 const nextSlide = () => {
     // Get current class
     var current = document.querySelector('.current');
-    if(!current.classList){
+    if(!current){
+      prevSlide()
     $('.slide1').addClass('current')
     current = document.querySelector('.current');
     }
@@ -57,7 +58,7 @@ const nextSlide = () => {
 const prevSlide = () => {
     // Get current class
     var current = document.querySelector('.current');
-    if(!current.classList){
+    if(!current){
     $('.slide1').addClass('current')
     current = document.querySelector('.slide1');
     }

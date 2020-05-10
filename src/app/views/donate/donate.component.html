@@ -26,7 +26,17 @@
                           <div id="xs-donation-form" class="xs-donation-form">
                               <div class="xs-input-group">
                                   <label for="xs-donate-name">Donation Amount </label>
-                                  <input type="text" [(ngModel)]="amnt"   name="name" id="xs-donate-name" class="form-control" placeholder="Minimum of INR 5">
+
+<div class="donation-group">
+   
+   <button class="donate-option" (click)="add('100')">INR 100</button>
+   <button class="donate-option" (click)="add('500')">INR 500</button>
+   <button class="donate-option" (click)="add('1000')">INR 1000</button>
+   <button class="donate-option" (click)="showCustomOption()">CUSTOM</button>
+
+</div>
+
+                                  <input [hidden]="!showCustom" type="text" [(ngModel)]="amnt"   name="name" id="xs-donate-name" class="form-control" placeholder="Minimum of INR 5">
                               </div><!-- .xs-input-group END -->
 
                               <button type="submit" (click)="proceed()" class="btn btn-warning"><span class="badge"><i class="fa fa-heart"></i></span> Donate now</button>
