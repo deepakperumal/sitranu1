@@ -10,6 +10,7 @@ export class HomeComponent {
   constructor(private router : Router) {}
   ngOnInit() {
     $(window).scrollTop(0);
+    
     var url = $(location).attr('href')
     var parts = url.split("/");
     var last_part = parts[parts.length-2];
